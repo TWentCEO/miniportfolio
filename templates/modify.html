@@ -3,14 +3,14 @@
     <form action="{{ url_for('addrec') }}" method="POST">
       <h3>Portfolio_Modify</h3>
 
-      Github_Address<br />
-      <input type="text" name="git" /><br />
+      name<br />
+      <input type="text" name="name" value="{{rows[0]['name']}}" /><br />
 
-      Portfolio_text<br />
-      <input type="text" name="portfolio_text" /><br />
+      info<br />
+      <input type="text" name="info" value="{{rows[0]['info']}}" /><br />
 
-      About_me<br />
-      <input type="text" name="about_me" /><br />
+      git<br />
+      <input type="text" name="git" value="{{rows[0]['git']}}" /><br />
 
       <input type="submit" value="submit" /><br />
     </form>
